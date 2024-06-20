@@ -1,0 +1,585 @@
+*{
+    border: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+.nav1{
+    height: 90px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.nav1 ul{
+    float: center;
+    text-align: center;
+}
+.nav1 ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 15px;
+}
+.nav1 ul li a{
+    position: relative;
+    color: black;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 5px 30px;
+    text-transform: uppercase;
+}
+.nav1 ul li a::before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav1 ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav1 ul li .line::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: width .25s ease;
+}
+.nav1 ul li button{
+    background-color: transparent;
+    border: none;
+}
+.nav1 ul li button p{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 130px 0 130px;
+    margin: 0;
+}
+.sub{
+    background-color: black;
+    height: 250px;
+    width: 100%;
+}
+.sub .p1{
+    position: relative;
+    color: white;
+    font-family:sans-serif;
+    top: 80px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sub .p1 a{
+    text-decoration: none;
+}
+.sub .p2{
+    position: relative;
+    color: white;
+    font-family:sans-serif;
+    top: 90px;
+    font-size: 14px;
+}
+.nav2{
+    padding: 50px 0 0 0 ;
+    height: 300px;
+    background-color: transparent;
+    border-top: 1px solid black;
+}
+.nav2 img{
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 12%;
+}
+.nav2 ul{
+    float: center;
+    text-align: center;
+}
+.nav2 ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 15px;
+}
+.nav2 ul li a{
+    position: relative;
+    color: black;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 5px 20px;
+    text-transform: uppercase;
+}
+.nav2 ul li a::before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav2 ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav2 ul li .line::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: width .25s ease;
+}
+.nav2 ul li button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 60px;
+}
+.nav2 ul li button p{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 180px 0 250px;
+    margin: 0;
+}
+.email1{
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+#email-field{
+    display: flex;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    font-size: 26px;
+    padding: 5px 2px;
+    position: relative;
+    z-index: 10;
+}
+#email-label{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 2px;
+    color: #777;
+    font-size: 15px;
+    transition: bottom 0.3s;
+} */
+
+/* #email-error{
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+} */
+/* .email{
+    border-bottom: 2px solid white;
+    left: 20px;
+    box-shadow: none;
+    position: relative;
+    background-color: transparent;
+} */
+
+
+.nav1{
+    height: 90px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.nav1 img{
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 12%;
+}
+.nav1 ul{
+    float: center;
+    text-align: center;
+}
+.nav1 ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 15px;
+}
+.nav1 ul li a{
+    position: relative;
+    color: black;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 5px 20px;
+    text-transform: uppercase;
+}
+.nav1 ul li a::before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav1 ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav1 ul li .line::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: width .25s ease;
+}
+.nav1 ul li button{
+    background-color: transparent;
+    border: none;
+}
+.nav1 ul li button p{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 130px;
+    margin: 0;
+}
+header {
+    position: relative;
+    top: 0;
+    left: 34%;
+    width: 70%;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.navbar {
+    overflow:hidden;
+    z-index: 1;
+    background-color: black;    
+    position: relative;
+    height: 140px; 
+    top: 0px; 
+    width: 100%; 
+    left: 0px;
+}
+.navigation ul{
+    float: center;
+    margin: 0px 0px;
+    text-align: center;
+}
+.navigation ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 15px;
+}
+.navigation ul li a{
+    position: relative;
+    color: white;
+    font-size: 17px;
+    padding: 5px 0px;
+    margin: 5px 180px 5px 20px;
+    text-transform: uppercase;
+}
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    border-bottom: 4px solid;
+    border-bottom-color: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s linear;
+}
+.navigation a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navigation .line::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #fff;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: width .25s ease;
+}
+
+.contact-container {
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #000000;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.contact-left-title h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr {
+    border: none;
+    width: 210px;
+    height: 5px;
+    left: 0;
+    background-color:#ffffff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #ffffff;
+}
+
+.contact-inputs::placeholder{
+    color: #000000;
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #ffffff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg,#ff2b2b,rgb(255, 37, 37));
+    cursor: pointer;
+}
+
+.contact-left button img{
+height: 15px;
+}
+
+.contact-right img{
+width: 500px;
+}
+
+@media (max-width: 800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+}
+
+.sub{
+    background-color: black;
+    height: 250px;
+    width: 100%;
+}
+.sub .p1{
+    position: relative;
+    color: white;
+    font-family:sans-serif;
+    top: 80px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sub .p1 a{
+    text-decoration: none;
+}
+.sub .p2{
+    position: relative;
+    color: white;
+    font-family:sans-serif;
+    top: 90px;
+    font-size: 14px;
+}
+.nav2{
+    padding: 50px 0 0 0 ;
+    height: 300px;
+    background-color: transparent;
+    border-top: 1px solid black;
+}
+.nav2 img{
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 12%;
+}
+.nav2 ul{
+    float: center;
+    text-align: center;
+}
+.nav2 ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 15px;
+}
+.nav2 ul li a{
+    position: relative;
+    color: black;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 5px 20px;
+    text-transform: uppercase;
+}
+.nav2 ul li a::before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav2 ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav2 ul li .line::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: #000;
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: width .25s ease;
+}
+.nav2 ul li button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    left: 60px;
+}
+.nav2 ul li button p{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 180px 0 250px;
+    margin: 0;
+}
+.email1{
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+#email-field{
+    display: flex;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    outline: none;
+    font-size: 26px;
+    padding: 5px 2px;
+    position: relative;
+    z-index: 10;
+}
+#email-label{
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 2px;
+    color: #777;
+    font-size: 15px;
+    transition: bottom 0.3s;
+}

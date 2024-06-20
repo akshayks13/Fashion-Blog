@@ -1,0 +1,202 @@
+*{
+    border: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+.nav1{
+    height: 90px;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.nav1 img{
+    width: 150px;
+    position: absolute;
+    top: 17px;
+    left: 12%;
+}
+.nav1 ul{
+    float: center;
+    text-align: center;
+}
+.nav1 ul li{
+    display: inline-block;
+    line-height:80px;
+    margin: 0 15px;
+}
+.nav1 ul li a{
+    position: relative;
+    color: black;
+    font-size: 14px;
+    padding: 5px 0px;
+    margin: 5px 20px;
+    text-transform: uppercase;
+}
+.nav1 ul li a:before{
+    position: absolute;
+    content: ' ';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+.nav1 ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.nav1 ul li button{
+    background-color: transparent;
+    border: none;
+}
+.nav1 ul li button p{
+    position: relative;
+    top: 10px;
+    font-size: 40px;
+    /* font-family:'Times New Roman', Times, serif; */
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none;
+    padding: 0px 130px;
+    margin: 0;
+}
+
+/* Selection */
+
+.selection{
+    margin-top: 40px
+}
+
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+
+.menu {
+margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  height: 10vh;
+  list-style: none;
+}
+
+.menu li {
+  width: 120px;
+  height: 60px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+
+  button {
+    background-color:transparent;
+    font-size: 22px;
+    color: #777;
+    text-decoration: none;
+    transition: all 0.45s;
+    border: none;
+  }
+
+  &:hover {
+    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+    animation: line 1s;
+  }
+
+  &:hover button {
+    color: #000000;
+  }
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+.btn :active{
+    color: #000000;
+}
+
+.btn{
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+    background-color: white;
+    cursor: pointer;
+}
+  
+
+
+.MainBody{
+    height: 2000px;
+    width: 100%;
+}
+
+.images{
+    height: 600px;
+    margin-top: 60px;
+    margin-bottom: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture{
+    height: 600px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+.picture img{
+    height: 100%;
+    transition-duration: 0.3s;
+    transition-timing-function:ease-in;
+}
+
+.picture figcaption{
+    line-height: 30px;
+    padding: 20px;
+    width: 350px;
+    font-size: 15px;
+    font-family: "Lato";
+}
+
+.picture img:hover{
+    opacity: 0.6;
+    border: 5px solid black;
+}
+
+figcaption a{
+    color: rgb(2, 94, 194);
+}
+
+figcaption a:hover{
+    text-decoration:underline ;
+}
